@@ -23,11 +23,11 @@ You'll be able to update the repository by calling `git pull ScrollOfDebug shpd/
 ````java
 import com.zrp200.scrollofdebug.ScrollOfDebug;
 ````
-        after the imports,
+after the imports,
 ````java
 if (SPDSettings.debugScroll()) initDebug(hero);
 ````
-        at the end of `initHero`, and add 
+at the end of `initHero`, and add 
 ````java
 private static void initDebug( Hero hero ) {
 	ScrollOfDebug debug = new ScrollOfDebug();
@@ -35,6 +35,6 @@ private static void initDebug( Hero hero ) {
 	Dungeon.quickslot.setSlot(Dungeon.quickslot.SIZE - 1, debug);
 }
 ```` 
-	  after `initHuntress`.
+after `initHuntress`.
 
 5. Enjoy!
