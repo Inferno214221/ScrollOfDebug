@@ -20,15 +20,15 @@ You'll be able to update the repository by calling `git pull ScrollOfDebug shpd/
     * You can do this via [`add-automatically.patch`](https://github.com/Zrp200/ScrollOfDebug/blob/master/add-automatically.patch), which will add ScrollOfDebug to the correct location automatically and amend [`GameScene.java`](https://github.com/00-Evan/shattered-pixel-dungeon/blob/master/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/scenes/GameScene.java) to automatically place the Scroll of Debug into the hero's inventory when loading a game in INDEV mode.
     * Alternatively you can add some lines to HeroClass.java.
 	  Add 
-	  ````java
+````java
 import com.zrp200.scrollofdebug.ScrollOfDebug;
-	  ````
+````
         after the imports,
-	  ````java
+````java
 if (SPDSettings.debugScroll()) initDebug(hero);
 ````
         at the end of `initHero`, and add 
-	  ````java
+````java
 private static void initDebug( Hero hero ) {
 	ScrollOfDebug debug = new ScrollOfDebug();
 	Dungeon.hero.belongings.backpack.items.add(debug);
