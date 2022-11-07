@@ -6,12 +6,7 @@ Currently, the Scroll of Debug only works when ran on .jar versions of the game.
 ## Installation
 1. Obtain a fork of <https://github.com/00-Evan/shattered-pixel-dungeon> that is updated to be at least consistent with [v1.0.0](https://github.com/00-Evan/shattered-pixel-dungeon/releases/tag/v1.0.0).
 
-2. Add this repository.
-````shell
-git remote add ScrollOfDebug https://github.com/Inferno214221/ScrollOfDebug
-git pull ScrollOfDebug shpd/1.2/pc-only
-````
-You'll be able to update the repository by calling `git pull ScrollOfDebug shpd/1.2/pc-only`.
+2. Add this repository in `shattered-pixel-dungeon/core/src/main/java/com/zrp200/scrollofdebug/`
 
 3. Ensure the code compiles.
     * If the directory `shatteredpixel.shatteredpixeldungeon` was changed in the fork, a mass find and replace must be done for the scroll to work properly.
