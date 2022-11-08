@@ -17,18 +17,12 @@ Currently, the Scroll of Debug only works when ran on .jar versions of the game.
 	````java
 	import com.zrp200.scrollofdebug.ScrollOfDebug;
 	````
-	after the imports,
+	after the imports and add 
 	````java
-	if (SPDSettings.debugScroll()) initDebug(hero);
-	````
-	at the end of `initHero`, and add 
-	````java
-	private static void initDebug( Hero hero ) {
 		ScrollOfDebug debug = new ScrollOfDebug();
 		Dungeon.hero.belongings.backpack.items.add(debug);
 		Dungeon.quickslot.setSlot(Dungeon.quickslot.SIZE - 1, debug);
-	}
 	```` 
-	after `initHuntress`.
+	to the end of `initHero`.
 
 5. Enjoy!
