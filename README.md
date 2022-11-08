@@ -19,9 +19,9 @@ Currently, the Scroll of Debug only works when ran on .jar versions of the game.
 	````
 	after the imports and add 
 	````java
-		ScrollOfDebug debug = new ScrollOfDebug();
-		Dungeon.hero.belongings.backpack.items.add(debug);
-		Dungeon.quickslot.setSlot(Dungeon.quickslot.SIZE - 1, debug);
+	ScrollOfDebug debug = new ScrollOfDebug();
+	Dungeon.hero.belongings.backpack.items.add(debug);
+	Dungeon.quickslot.setSlot(Dungeon.quickslot.SIZE - 1, debug);
 	```` 
 	to the end of `initHero`.
 
